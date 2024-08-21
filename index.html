@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://kit.fontawesome.com/b5aa530026.js" crossorigin="anonymous"></script>
+
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind and DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: 'rgb(171, 239, 95)',
+                        secondary: 'rgba(171, 239, 95, 0.2)',
+                        txt33: 'rgb(33, 33, 33)',
+                        txt73: 'rgb(73, 73, 73)',
+                        txt115: 'rgb(115, 115, 115)',
+                        txt233: 'rgb(233, 233, 233)',
+                        
+                    },
+                    fontFamily: {
+                        Manrope: "Manrope",
+                    },
+                    backgroundImage: {
+                        bg1: "url('./assets/bg.jpg')",
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-Manrope">
+    <P class="bg-bg1 text-txt115">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis modi fugit, quos obcaecati hic minima quia enim facere nam maiores iusto nesciunt quis aliquid expedita quaerat tempora corrupti culpa ipsam?</P>
+</body>
+
+</html>
