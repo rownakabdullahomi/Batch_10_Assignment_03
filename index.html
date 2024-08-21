@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rinterio</title>
 
     <!-- Font Awesome CDN -->
     <script src="https://kit.fontawesome.com/b5aa530026.js" crossorigin="anonymous"></script>
@@ -18,6 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Tailwind CSS Configuration -->
     <script>
         tailwind.config = {
             theme: {
@@ -30,22 +31,91 @@
                         txt73: 'rgb(73, 73, 73)',
                         txt115: 'rgb(115, 115, 115)',
                         txt233: 'rgb(233, 233, 233)',
-                        
+
                     },
                     fontFamily: {
                         Manrope: "Manrope",
                     },
                     backgroundImage: {
                         bg1: "url('./assets/bg.jpg')",
+                        back: "linear-gradient(0.00deg, rgb(240, 240, 240), rgba(255, 255, 255, 0) 100%)",
                     },
                 }
             }
         }
     </script>
+
 </head>
 
 <body class="font-Manrope">
-    <P class="bg-bg1 text-txt115">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis modi fugit, quos obcaecati hic minima quia enim facere nam maiores iusto nesciunt quis aliquid expedita quaerat tempora corrupti culpa ipsam?</P>
+
+    <!-- Header Section Starts -->
+    <header class="bg-back">
+        <nav>
+            <div class="navbar w-11/12 mx-auto">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                            <li><a>Item 1</a></li>
+                            <li>
+                                <a>Parent</a>
+                                <ul class="p-2">
+                                    <li><a>Submenu 1</a></li>
+                                    <li><a>Submenu 2</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Item 3</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="flex items-center justify-center gap-1 cursor-pointer">
+                        <div class="bg-[#ABEF5F] w-8 h-8 flex items-center justify-center rounded-full">
+                            <i class="fa-solid fa-arrow-up rotate-45"></i>
+                        </div>
+                        <a class="text-3xl font-bold">Rinterio</a>
+                    </div>
+
+
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-txt115 font-semibold">
+                        <li class="text-txt73 font-bold"><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex items-center justify-center gap-5">
+                        <button>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <div class="flex items-center justify-center gap-2 px-4 py-2 bg-[#ABEF5F] rounded-3xl cursor-pointer">
+                            <a class="text-l">Book Consult</a>
+                            <div class="bg-[#1C1C1C] w-7 h-7 flex items-center justify-center rounded-full text-white">
+                                <i class="fa-solid fa-arrow-up rotate-45"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
 </body>
 
 </html>
