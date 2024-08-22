@@ -38,7 +38,7 @@
                     },
                     backgroundImage: {
                         bg1: "url('./assets/bg.jpg')",
-                        back: "linear-gradient(0.00deg, rgb(240, 240, 240), rgba(255, 255, 255, 0) 100%)",
+                        back: "linear-gradient(0.00deg, rgb(225, 225, 225), rgba(255, 255, 255, 0) 100%)",
                     },
                 }
             }
@@ -54,27 +54,7 @@
         <nav>
             <div class="navbar w-11/12 mx-auto">
                 <div class="navbar-start">
-                    <div class="dropdown">
-                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h8m-8 6h16" />
-                            </svg>
-                        </div>
-                        <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
-                    </div>
+
 
 
                     <div class="flex items-center justify-center gap-1 cursor-pointer">
@@ -86,7 +66,7 @@
 
 
                 </div>
-                <div class="navbar-center hidden lg:flex">
+                <div class="navbar-center hidden lg:flex lg:mr-20">
                     <ul class="menu menu-horizontal px-1 text-txt115 font-semibold">
                         <li class="text-txt73 font-bold"><a>Home</a></li>
                         <li><a>Services</a></li>
@@ -97,20 +77,62 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <div class="flex items-center justify-center gap-5">
-                        <button>
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </button>
-                        <button>
-                            <i class="fa-solid fa-cart-shopping"></i>
-                        </button>
-                        <div class="flex items-center justify-center gap-2 px-4 py-2 bg-[#ABEF5F] rounded-3xl cursor-pointer">
-                            <a class="text-l">Book Consult</a>
-                            <div class="bg-[#1C1C1C] w-7 h-7 flex items-center justify-center rounded-full text-white">
-                                <i class="fa-solid fa-arrow-up rotate-45"></i>
+                    <div class="hidden sm:block">
+                        <div class="flex items-center justify-center gap-5">
+
+                            <button>
+                                <i class="bg-white w-8 h-8 flex items-center justify-center rounded-full fa-solid fa-magnifying-glass"></i>
+                            </button>
+
+                            <button>
+                                <i
+                                    class="bg-white w-8 h-8 flex items-center justify-center rounded-full fa-solid fa-cart-shopping"></i>
+                            </button>
+                            <div
+                                class="flex items-center justify-center gap-2 px-4 py-2 bg-[#ABEF5F] rounded-3xl cursor-pointer">
+                                <a class="text-l font-bold">Book Consult</a>
+                                <div
+                                    class="bg-[#1C1C1C] w-7 h-7 flex items-center justify-center rounded-full text-white">
+                                    <i class="fa-solid fa-arrow-up rotate-45"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="lg:hidden bg-white flex items-center justify-center h-9 w-9 rounded-full hover:bg-slate-600 hover:text-white">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-lg font-medium right-0">
+                            <div class="flex items-center justify-center gap-1">
+                                <button>
+                                    <i
+                                        class="bg-white w-8 h-8 flex items-center justify-center rounded-full fa-solid fa-magnifying-glass"></i>
+                                </button>
+                                <button>
+                                    <i
+                                        class="bg-white w-8 h-8 flex items-center justify-center rounded-full fa-solid fa-cart-shopping"></i>
+                                </button>
+
+                                <div
+                                    class="flex items-center justify-center gap-1 px-2 py-1 bg-[#ABEF5F] rounded-xl cursor-pointer">
+                                    <a class="text-xs font-semibold"><span>Book Consult</span></a>
+                                    <div
+                                        class="bg-[#1C1C1C] w-5 h-5 flex items-center justify-center rounded-full text-white text-xs">
+                                        <i class="fa-solid fa-arrow-up rotate-45"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <li><a>Home</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Portfolio</a></li>
+                            <li><a>Blogs</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+
                 </div>
             </div>
         </nav>
