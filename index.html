@@ -32,6 +32,7 @@
                         txt73: 'rgb(73, 73, 73)',
                         txt115: 'rgb(115, 115, 115)',
                         txt233: 'rgb(233, 233, 233)',
+                        txt_PlaceHolder: '#A0A0A0', 
 
                     },
                     fontFamily: {
@@ -362,10 +363,10 @@
         </section>
 
         <!-- Form Section Starts -->
-         <section class="">
-            <div class="bg-bg1 bg-cover">
+         <section class="bg-bg1 bg-cover">
+            <div class=" w-11/12 mx-auto ">
                 <div class="text-center ">
-                    <div class="lg:pt-20 pb-6 flex items-center justify-center">
+                    <div class="lg:pt-20 pt-10 pb-6 flex items-center justify-center">
                         <button class="bg-[#acef5f5b] rounded-2xl px-4 py-2 text-sm font-extrabold">
                             <i class="fa-solid fa-arrow-up rotate-90"></i>
                             <a href="" class="ml-1 text-txt73">Let’s Connect</a>
@@ -377,13 +378,13 @@
                 </div>
 
                 <!-- Form Starts -->
-                 <form action="" class="w-8/12 mx-auto pb-20">
-                    <div class="grid grid-cols-2 gap-5">
-                        <input type="email" id="email" class="text-sm rounded-lg p-2.5 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required placeholder:text-[#A0A0A0]" placeholder="First Name*" required />
-                        <input type="email" id="email" class="text-sm rounded-lg p-2.5 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required" placeholder="Last Name*" required />
-                        <input type="email" id="email" class="text-sm rounded-lg p-2.5 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required" placeholder="Phone Number*" required />
-                        <input type="email" id="email" class="text-sm rounded-lg p-2.5 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required" placeholder="Email Number*" required />
-                        <textarea name="" id="" class="text-sm rounded-lg p-2.5 required col-span-2 row-span-12 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F]" placeholder="Write your message here* required" required></textarea>
+                 <form action="" class="lg:w-8/12 mx-auto pb-20">
+                    <div class="grid lg:grid-cols-2 grid-cols-1 gap-5">
+                        <input type="email" id="email" class="text-sm rounded-3xl p-4 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required placeholder:text-txt_PlaceHolder" placeholder="First Name*" required />
+                        <input type="email" id="email" class="text-sm rounded-3xl p-4 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required placeholder:text-txt_PlaceHolder" placeholder="Last Name*" required />
+                        <input type="email" id="email" class="text-sm rounded-3xl p-4 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required placeholder:text-txt_PlaceHolder" placeholder="Phone Number*" required />
+                        <input type="email" id="email" class="text-sm rounded-3xl p-4 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] required placeholder:text-txt_PlaceHolder" placeholder="Email Number*" required />
+                        <textarea name="" id="" class="text-sm rounded-3xl p-4 required lg:col-span-2 row-span-12 focus:ring-4 focus:outline-none focus:ring-[#ABEF5F] placeholder:text-txt_PlaceHolder" placeholder="Write your message here*" required></textarea>
                     </div>
                     <button
                         class="w-full flex items-center justify-center gap-2 px-4 py-2 bg-[#ABEF5F] rounded-3xl text-txt33 text-l font-extrabold mt-5 ">View
@@ -397,6 +398,9 @@
          </section>
 
     </main>
+
+    <!-- Footer Section Starts -->
+     <footer></footer>
 
 </body>
 
